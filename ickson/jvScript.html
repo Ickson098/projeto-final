@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h6 id="meuElemento">
+        oi 
+    </h6>
+    <h2 id="14">Taca a mãe pra ver se quica</h2>
+    <p id="meuParagrafo">Aquela Danada</p>
+    <img id="minhaImagem" src="img/images.jpg" alt="d233232a">
+
+    
+        <ul>
+        <li class="Item">Item 1</li>
+        <li class="Item">Item 2</li>
+        <li class="Item">Item 3</li>
+        </ul>
+    <script>
+        var elemento = document.getElementById("meuElemento");
+        console.log(elemento); 
+
+        var elemento = document.getElementById("meuElemento");
+        elemento.innerText = "Novo texto via JavaScript";
+
+        var elemento = document.getElementById("meuElemento");
+        elemento.innerHTML = "<strong>Novo conteúdo em HTML</strong>";
+
+        var imagem = document.getElementById("minhaImagem");
+        imagem.src = "img/module_table_top.png";
+
+        var imagem = document.getElementById("minhaImagem");
+        imagem.setAttribute("alt", "52525252");
+
+        var paragrafo = document.getElementById("meuParagrafo");
+        paragrafo.style.color = "blue";
+        paragrafo.style.fontSize = "20px";
+        paragrafo.style.border = "2px solid red";
+
+        
+            var itens = document.getElementsByClassName("Item");
+            for (var i = 0; i < itens.length; i++) {
+                itens[i].style.color = "blue";
+            }
+        
+    </script>
+</body>
+</html>
